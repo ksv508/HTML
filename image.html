@@ -7,7 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Welcome to Image Page</h1>
+    <!--TO COPY IMAGE RIGHT CLICK ON IMAGE AND SELECT COPY IMAGE ADDRESS-->
+    <!--TRY TO TEKE IMAGE FROM UNSPLASH AND PEXELS OTHERWISE COPY WRITE ISSUE MAY COME-->
+    <img src="https://images.unsplash.com/photo-1752254091842-3f26af77d5f2?q=80&w=1542&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Nhi Hai Bhai">
+
+    <!--Load Image From Locals
+        ./ means current directory
+        To move back use ../
+        to move forward use forder name-->
+    <img src="./photo.jpg" width="1200" alt="Image Nhi Hai Bhai">
     
+    <picture>
+        <source media="(min-width:650px)" srcset="./photo.jpg"/> <!-- when pixel is less than 650 this image will load otherwise tage below will load-->
+        <img src="./photo.jpg" alt="Cann't Load Image">
+    </picture>
+
+    <!-- An Image Map Generator -->
+
+    <img src="photo.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="bridge()" target="" alt="Bridge" title="Bridge" href="" coords="965,735,1799,791" shape="rect">
+        <area onclick="flower()" target="" alt="flower" title="flower" href="" coords="-3,1127,2183,1360" shape="rect">
+        <area onclick="river()" target="" alt="River" title="River" href="" coords="-3,935,404,880,786,838,967,828,1106,811,1211,791,1314,799,1403,797,1490,799,1591,803,1692,832,1727,869,1719,921,1593,939,1426,966,1236,981,996,993,786,1010,662,1026,485,1036,284,1053,198,1076,92,1094,39,1094,16,1100" shape="poly">
+    </map>
+    <script>
+        function bridge(){
+            alert("You Clicked On Bridge")
+        }
+        function flower(){
+            alert("You Clicked On Flower")
+        }
+        function River(){
+            alert("You Clicked On River");
+        }
+            
+    </script>
 </body>
 </html>
