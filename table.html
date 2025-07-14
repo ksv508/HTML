@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Table Style Formatting -->
+    <style>
+        table{
+            width:100%;
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid white;
+            padding: 8px;
+            color: #3dd193;
+        }
+        tr:nth-child(even){
+            background-color: #974040;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <table>
+        <!--tr - table row, th- table heading
+        table>tr>th*3   create three row
+        -->
+        <tr>
+            <th>Country</th>
+            <th>Country_Code</th>
+            <th>Email</th>
+        </tr>
+        <!--tr>td*3    td-> table data-->
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>india@google.com</td>
+        </tr>
+        <tr>
+            <td>Uinted states of america</td>
+            <td>USA</td>
+            <td>usa@google.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP</td>
+            <td>japan@google.com</td>
+        </tr>
+        <tr>
+            <td>china</td>
+            <td>CH</td>
+            <td>china@google.com</td>
+        </tr>
+    </table>
+</br>
+    <table>
+        <tr>
+            <th colspan="2">Country</th>
+            <td>India</td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <th>Code</th>
+            <td>IN</td>
+            <td>JPN</td>
+        </tr>
+    </table>
+
+     </br>
+    <a href="list.html">Next Page i.e ListPage</a> </br>
+    <a href="image.html">Previous Page i.e Image Page</a>
+</body>
+</html>
